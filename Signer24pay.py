@@ -10,6 +10,7 @@ class Signer24pay:
     def __init__(self, mid, key):
         self.iv = mid + mid[::-1]
         self.key = binascii.unhexlify(key)
+        
 #    def __pad(self, s):
 #        return s + b" " * (AES.block_size - len(s) % AES.block_size)
 
